@@ -1,0 +1,18 @@
+docker images
+docker ps
+docker pull ubuntu
+docker run ubuntu
+docker ps -a
+docker run -it nginx /bin/bash
+docker run -it -d ubuntu
+docker run -it -d ubuntu(ctr^p + ctr^q) to run container after exiting)
+docker attach 9cd974942e26
+docker run -it -d -p 8080:80 nginx
+docker run -it -d --restart unless-stopped -p 8080:80 nginx
+docker stop e8
+
+cd dockerfiles
+nano Dockerfile
+docker build -t lltv/apache:1.1
+docker rmi (image id){to remove images}
+docker rm (container id){to remove containers}
